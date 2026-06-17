@@ -1,0 +1,21 @@
+# 1. 基础风格: 选择 LLVM 风格作为修改起点[reference:2]
+BasedOnStyle: LLVM
+
+# 2. 核心 VS2022 样式: 大括号独占一行 (Allman 风格) 和 4 空格缩进[reference:3][reference:4]
+BreakBeforeBraces: Allman
+IndentWidth: 4
+UseTab: Never
+TabWidth: 4
+
+# 3. 细致调整: 让代码格式更贴近 VS2022 的默认行为
+# 控制流语句的短块不折叠[reference:5]
+AllowShortBlocksOnASingleLine: Never
+AllowShortIfStatementsOnASingleLine: Never
+# 函数定义短时不折叠[reference:6]
+AllowShortFunctionsOnASingleLine: None
+# 访问修饰符 (public, private) 缩进一个级别[reference:7]
+AccessModifierOffset: -4
+# 命名空间内缩进[reference:8]
+NamespaceIndentation: All
+# 强制在 template <...> 之后换行
+AlwaysBreakTemplateDeclarations: Yes
